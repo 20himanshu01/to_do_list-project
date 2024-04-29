@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, white, #FFB6C1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 12px rgb(5, 5, 5);
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    margin-left: 5px;
+    padding: 4px 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjusted width for tablets and smaller screens */
+        margin: 20px auto; /* Adjusted margin for tablets and smaller screens */
+    }
+    
+    input[type="text"],
+    button {
+        width: 100%; /* Full width for tablets and smaller screens */
+    }
+
+    .delete-btn {
+        width: 30px; /* Adjusted width for smaller screens */
+        height: 30px; /* Adjusted height for smaller screens */
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+}
+
+/* Additional Responsive Styles for Width between 300px and 500px */
+@media (max-width: 500px) {
+    .container {
+        width: 95%; /* Adjusted width for smaller screens */
+        margin: 10px auto; /* Adjusted margin for smaller screens */
+        padding: 10px;
+        padding: 2px 2px; /* Adjusted padding for smaller screens */
+    }
+    
+    input[type="text"],
+    button {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .delete-btn {
+        width: 25px; /* Further adjusted width for smaller screens */
+        height: 25px; /* Further adjusted height for smaller screens */
+        font-size: 12px;
+        padding: 2px 2px; /* Further adjusted font size for smaller screens */
+    }
+    
+    h1 {
+        font-size: 24px; /* Decreased font size for smaller screens */
+    }
+}
